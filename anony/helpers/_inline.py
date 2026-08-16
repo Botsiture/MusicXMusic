@@ -152,7 +152,7 @@ class Inline:
             rows += [
                 [
                     self.ikb(
-                        text=lang["Alisa Waifu Bot"],
+                        text=lang["˹ᴀʟɪꜱᴀ ᴡᴀɪꜰᴜ ʙᴏᴛ˼"],
                         url="https://t.me/AlisaWaifusBot",
                     )
                 ]
