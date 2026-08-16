@@ -123,10 +123,7 @@ class Inline:
                     self.ikb(text=cmd_delete, callback_data="settings delete"),
                 ],
                 [
-                    self.ikb(
-                        text=lang["language"] + " ➜",
-                        callback_data="settings",
-                    ),
+                    self.ikb(text=lang["language"] + " ➜", callback_data="settings"),
                     self.ikb(text=lang_codes[language], callback_data="language"),
                 ],
             ]
@@ -149,10 +146,12 @@ class Inline:
             ],
         ]
         if private:
+            # Safe get use kiya hai taaki KeyError na aaye agar key missing ho
+            alisa_text = lang.get("˹ᴀʟɪꜱᴀ ᴡᴀɪꜰᴜ ʙᴏᴛ˼", "˹ᴀʟɪꜱᴀ ᴡᴀɪꜰᴜ ʙᴏᴛ˼")
             rows += [
                 [
                     self.ikb(
-                        text=lang["˹ᴀʟɪꜱᴀ ᴡᴀɪꜰᴜ ʙᴏᴛ˼"],
+                        text=alisa_text,
                         url="https://t.me/AlisaWaifusBot",
                     )
                 ]
