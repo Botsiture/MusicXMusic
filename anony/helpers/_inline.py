@@ -153,7 +153,7 @@ class Inline:
                 [
                     self.ikb(
                         text=lang["Alisa Waifu Bot"],
-                        url="t.me/AlisaWaifusBot",
+                        url="https://t.me/AlisaWaifusBot",
                     )
                 ]
             ]
